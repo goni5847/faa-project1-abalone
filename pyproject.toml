@@ -1,0 +1,28 @@
+# Project 1 environment: `pip install .` installs only the dependencies below (no modules are
+# packaged). Same minimum versions as the course. Use `make venv`. Keras runs on JAX: export KERAS_BACKEND=jax.
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project1"
+version = "2026.10"
+description = "FAA Project 1: The Five Classes of Learners (abalone, regression)"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "scipy>=1.18.1",
+    "jax>=0.11.2",
+    "scikit-learn>=1.9.1",
+    "keras>=3.15.1",
+    "polars>=1.44.2",
+    "matplotlib>=3.11.2",
+    "seaborn>=0.13.2",
+    "pyBlindOpt>=0.5.0",
+    "jupyterlab>=4.6.4",
+    "ipykernel>=7.3.0",
+]
+
+[tool.setuptools]
+packages = []
